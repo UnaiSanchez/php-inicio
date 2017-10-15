@@ -19,9 +19,9 @@
         <h2> BASE DE DATOS</h2>
             <?php
                 $servername = "localhost";                  
-                $username = "unaiSR";
-                $password = "hola";
-                $dbname = "unaiSR";
+                $username = "unaiSR";     //el nombre de tu usuario
+                $password = "hola";       //la contraseña
+                $dbname = "unaiSR";       //y el nombre de la base de datos, en mi caso es el mismo que mi usuario
                 $temperatura = 5;
  
                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -30,10 +30,10 @@
                       die("Conection filed: " . $conn->connect_error);
                 }
 
-                $sql = "INSERT INTO primeratabla(Temp) VALUES ($temperatura) ";
+                $sql = "INSERT INTO primeratabla(Temp) VALUES ($temperatura) ";   //primeratabla en el nombre de la tabla y Temp en el nombre de la columna
 
                 if ($conn->query($sql) === TRUE){
-                    echo "new record created susccesfully";
+                    echo "Bien!";
                 } else {
                     echo "error: " . $sql . "<br>" . $conn->error;
                 }
