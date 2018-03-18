@@ -1,3 +1,5 @@
 # php-inicio
 
-En el ej4, tu tendrás que tener un usuario en phpMyAdmin y hacerte una tabla
+En el ej4, tu tendrás que camiar los parámetros del SQL con tu usuario, contraseña y tabla
+
+!(desktop/oki.png)
